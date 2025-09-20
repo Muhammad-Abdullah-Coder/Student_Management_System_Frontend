@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(59, 59, 133);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 15%;
+    background: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    padding: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-item1 {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-item1 i {
+    margin-right: 10px;
+}
+
+.nav-item1:hover {
+    color: #cc0606;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.atdnc {
+    padding: 20px;
+}
+
+.hd1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.tble {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tble thead {
+    background: #f4f4f4;
+}
+
+.tble th, .tble td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tble th {
+    background: #f4f4f4;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="attendancelist.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="logo">
+                    <h1>
+                        <span class="nav-item">Admin</span>
+                    </h1>
+                </a>
+            </li>
+    
+            <li>
+                <a href="dashboard.html" target="_parent">
+                    <i class="fa-solid fa-menorah"></i>
+                    <span class="nav-item1">Dashboard</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="message.html" target="_parent">
+                    <i class="fas fa-message"></i>
+                    <span class="nav-item1">Message</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="#">
+                    <i class="fas fa-database"></i>
+                    <span class="nav-item1">Report</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="attendancelist.html" target="_parent">
+                    <i class="fas fa-clipboard-user"></i>
+                    <span class="nav-item1">Attendance-List</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="totalstudent.html" target="_parent">
+                    <i class="fas fa-clipboard-user"></i>
+                    <span class="nav-item1">Total-Students-List</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="rg.html" target="_parent">
+                    <i class="fas fa-sign"></i>
+                    <span class="nav-item1">Logout</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i>
+                    <span class="nav-item1">Setting</span>
+                </a>
+            </li>
+    
+        </ul>
+    </nav>
+
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Repeat for each student -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'John Doe', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'John Doe', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Jane Smith', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Jane Smith', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jany</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Jany', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Jany', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jennifer</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Jennifer', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Jennifer', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ana_de_Armas</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Ana_de_Armas', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Ana_de_Armas', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Alice', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Alice', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Bob', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Bob', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Charli</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Charli', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Charli', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Diana</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Diana', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Diana', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Edward</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Edward', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Edward', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Olivia</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Olivia', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Olivia', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'John', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'John', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Emily</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Emily', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Emily', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Michael</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Michael', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Michael', 'absent')">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sophie</td>
+                    <td>
+                        <button class="btn present" onclick="setStatus(this, 'Sophie', 'present')">Present</button>
+                        <button class="btn absent" onclick="setStatus(this, 'Sophie', 'absent')">Absent</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="statusList">
+            <h2>Present Students:</h2>
+            <ul id="presentList"></ul>
+            <h2>Absent Students:</h2>
+            <ul id="absentList"></ul>
+        </div>
+    </div>
+</div>
+<script src="attendancelist.js"></script>
+</body>
+</html>

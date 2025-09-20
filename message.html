@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Send Message</title>
+   <link rel="stylesheet" href="Attendance.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+   <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(59, 59, 133);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 15%;
+    background: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    padding: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-item1 {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-item1 i {
+    margin-right: 10px;
+}
+
+.nav-item1:hover {
+    color: #cc0606;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+
+      .container {
+         display: flex;
+         min-height: 100vh;
+      }
+
+      .form1 {
+         flex: 1;
+         padding: 20px;
+         background-color: #fff;
+         margin: 20px;
+         border-radius: 8px;
+         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+      .form1 h1 {
+         font-size: 24px;
+         margin-bottom: 20px;
+      }
+      table {
+         width: 100%;
+         border-collapse: collapse;
+      }
+      th, td {
+         padding: 10px;
+         text-align: left;
+      }
+      th {
+         width: 200px;
+         background-color: #f1f1f1;
+      }
+      input[type="text"],
+      input[type="phone"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"],
+      select,
+      textarea {
+         width: calc(100% - 20px);
+         padding: 10px;
+         border: 1px solid #ddd;
+         border-radius: 4px;
+         box-sizing: border-box;
+      }
+      textarea {
+         resize: vertical;
+      }
+      .bomn {
+         padding: 10px 20px;
+         border: none;
+         border-radius: 4px;
+         background-color: #007bff;
+         color: #fff;
+         cursor: pointer;
+         font-size: 16px;
+         margin-top: 10px;
+         margin-right: 10px;
+      }
+      .bomn.reset {
+         background-color: #6c757d;
+      }
+      .bomn:hover {
+         background-color: #0056b3;
+      }
+      .bomn.reset:hover {
+         background-color: #5a6268;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="logo">
+                    <h1>
+                        <span class="nav-item">Admin</span>
+                    </h1>
+                </a>
+            </li>
+    
+            <li>
+                <a href="dashboard.html" target="_parent">
+                    <i class="fa-solid fa-menorah"></i>
+                    <span class="nav-item1">Dashboard</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="message.html" target="_parent">
+                    <i class="fas fa-message"></i>
+                    <span class="nav-item1">Message</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="#">
+                    <i class="fas fa-database"></i>
+                    <span class="nav-item1">Report</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="attendancelist.html" target="_parent">
+                    <i class="fas fa-clipboard-user"></i>
+                    <span class="nav-item1">Attendance-List</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="totalstudent.html" target="_parent">
+                    <i class="fas fa-clipboard-user"></i>
+                    <span class="nav-item1">Total-Students-List</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="rg.html" target="_parent">
+                    <i class="fas fa-sign"></i>
+                    <span class="nav-item1">Logout</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i>
+                    <span class="nav-item1">Setting</span>
+                </a>
+            </li>
+    
+        </ul>
+    </nav> 
+
+      <div class="form1">
+         <form> 
+            <h1>Send Message</h1>
+            <table>
+                <tr>
+                    <th class="hf">First Name:</th>
+                    <td><input type="text" placeholder="Enter your First Name"></td>
+                </tr>
+                <tr>
+                    <th class="hf">Last Name:</th>
+                    <td><input type="text" placeholder="Enter your Last Name"></td>
+                </tr>
+                <tr>
+                    <th class="hf">Father Name:</th>
+                    <td><input type="text" placeholder="Enter your Father Name"></td>
+                </tr>
+                <tr>
+                    <th class="hf">CNIC:</th>
+                    <td><input type="text" placeholder="Enter your CNIC"></td>
+                </tr>
+                <tr>
+                    <th class="hf">Phone number:</th>
+                    <td><input type="phone" placeholder="+92-000-0000000"></td>
+                </tr>
+                <tr>
+                    <th class="hf">Email:</th>
+                    <td><input type="email" placeholder="****@gmail.com"></td>
+                </tr>
+                <tr>
+                    <th class="hf">Password:</th>
+                    <td><input type="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <th class="hf">Gender:</th>
+                    <td>
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <th class="hf">Date of Birth:</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th class="hf">Education Qualification:</th>
+                    <td>
+                        <select>
+                             <option>Select Option</option>
+                             <option>Matric</option>
+                             <option>Intermediate</option>
+                             <option>Graduation</option>
+                             <option>Postgraduation</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="hf">Message:</th>
+                    <td><textarea rows="5" cols="15" placeholder="Message"></textarea></td>
+                </tr>
+            </table>
+            <input class="bomn" type="submit" value="Submit">
+            <input class="bomn reset" type="reset" value="Reset">
+         </form>
+      </div>
+   </div>
+</body>
+</html>

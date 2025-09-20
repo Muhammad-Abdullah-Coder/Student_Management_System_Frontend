@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="content">
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="logo">
+                        <h1>
+                            <span class="nav-item">Admin</span>
+                        </h1>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html" target="_parent">
+                        <i class="fa-solid fa-menorah"></i>
+                        <span class="nav-item1">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="message.html" target="_parent">
+                        <i class="fas fa-message"></i>
+                        <span class="nav-item1">Message</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-database"></i>
+                        <span class="nav-item1">Report</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="attendancelist.html" target="_parent">
+                        <i class="fas fa-clipboard-user"></i>
+                        <span class="nav-item1">Attendance-List</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="totalstudent.html" target="_parent">
+                        <i class="fas fa-clipboard-user"></i>
+                        <span class="nav-item1">Total-Students-List</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="rg.html" target="_parent">
+                        <i class="fas fa-sign"></i>
+                        <span class="nav-item1">Logout</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i>
+                        <span class="nav-item1">Setting</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    
+        <section class="main">
+            <div class="maintop">
+                <center>
+                    <h1 class="hd">Students Profile</h1>
+                </center>
+            </div>
+
+            <br>
+
+            <div class="user">
+                <div class="card">
+                    <img src="2tsk.PNG" alt="Jany">
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <th>Student Details:</th>
+                                <td>Present: 85%</td>
+                                <td>Good-Work: 25%</td>
+                            </tr>
+                            <tr>
+                                <th>Joining Details:</th>
+                                <td>Month: 04</td>
+                                <td>Year: 00</td>
+                            </tr>
+                        </table>
+                        <h3>Name: Jany</h3>
+                        <p>Occupation: Ui/Ux Designer</p>
+                        <div class="bt">
+                            <button type="button">Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="3tsk.PNG" alt="Jennifer">
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <th>Student Details:</th>
+                                <td>Present: 75%</td>
+                                <td>Good-Work: 65%</td>
+                            </tr>
+                            <tr>
+                                <th>Joining Details:</th>
+                                <td>Months: 07</td>
+                                <td>Years: 00</td>
+                            </tr>
+                        </table>
+                        <h3>Name: Jennifer</h3>
+                        <p>Occupation: Frontend-Developer</p>
+                        <div class="bt">
+                            <button type="button">Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="jass.jpg" alt="Sophie">
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <th>Student Details:</th>
+                                <td>Present: 80%</td>
+                                <td>Good-Work: 95%</td>
+                            </tr>
+                            <tr>
+                                <th>Joining Details:</th>
+                                <td>Months: 03</td>
+                                <td>Years: 02</td>
+                            </tr>
+                        </table>
+                        <h3>Name: Sophie</h3>
+                        <p>Occupation: Fullstack-Developer</p>
+                        <div class="bt">
+                            <button type="button">Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="1taskk.PNG" alt="Ana_de_Armas">
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <th>Student Details:</th>
+                                <td>Present: 90%</td>
+                                <td>Good-Work: 85%</td>
+                            </tr>
+                            <tr>
+                                <th>Joining Details:</th>
+                                <td>Months: 02</td>
+                                <td>Years: 01</td>
+                            </tr>
+                        </table>
+                        <h3>Name: Ana_de_Armas</h3>
+                        <p>Occupation: Backend-Developer</p>
+                        <div class="bt">
+                            <button type="button">Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-name">Student Name</h2>
+                <p id="modal-occupation">Occupation</p>
+                <table id="modal-details">
+
+                </table>
+            </div>
+        </div>
+    </div>  
+
+        <div class="small-screen-message">
+            Please open this website on a laptop or MacBook.
+        </div>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>
